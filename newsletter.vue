@@ -20,8 +20,8 @@
                                         <input v-model="form_data.first_name" required class="margin_20 form-control" id="fieldgjksi" name="cm-f-fihudt" type="text" placeholder="First Name">
                                     </div>
                                     <div class="col-sm-6" >
-                                        <label for="fieldfihudi" class="accessibility">Last Name</label>
-                                        <input v-model="form_data.last_name" required class="margin_20 form-control" id="fieldfihudi" name="cm-f-fihudi" type="text" placeholder="Last Name">
+                                        <label for="fieldgjksd" class="accessibility">Last Name</label>
+                                        <input v-model="form_data.last_name" required class="margin_20 form-control" id="fieldgjksd" name="cm-f-fihudi" type="text" placeholder="Last Name">
                                     </div>
                                 </div>
                                 <div class="row">

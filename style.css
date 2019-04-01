@@ -395,8 +395,12 @@ img{
             padding: 0 5px;
         }
         .footer_links a {
-            color: $secondary;
+            color: #fff;
+            &:hover {
+                color: $secondary;
+            }
         }
+        
     }
     .copyright {
         padding: 20px 0;

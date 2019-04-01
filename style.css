@@ -135,6 +135,9 @@ img{
 .center {
     text-align: center;
 }
+input[type=search] {
+    padding-left: 5px;
+}
 
 /* *** LOADING *** */
 #overlay {

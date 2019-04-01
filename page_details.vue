@@ -53,7 +53,7 @@
                 updateCurrentPage(id) {
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
                     var _this = this;
-                    this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + this.id + ".json" }).then(function (response) {
+                    this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + "riverside-services + ".json" }).then(function (response) {
                         _this.currentPage = response.data;
                         console.log(_this.currentPage);
                         _this.$breadcrumbs[0].meta.breadcrumb = _this.currentPage.title

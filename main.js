@@ -150,7 +150,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                     },
                     {
                         name: "Twitter",
-                        url: "https://twitter.com",
+                        url: "https://twitter.com/RivPlaza",
                         iconClass: "fab fa-twitter"
                     },
                     {

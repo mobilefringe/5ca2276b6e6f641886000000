@@ -155,7 +155,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                     },
                     {
                         name: "Instagram",
-                        url: "https://www.instagram.com",
+                        url: "https://www.instagram.com/ShopRiversidePlaza",
                         iconClass: "fab fa-instagram"
                     },
                     // {

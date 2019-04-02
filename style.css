@@ -956,6 +956,10 @@ $anim-speed: 0.3s;
 #contact_us_container a {
     color: $secondary;
 }
+
+#contact_us_container h2 {
+    color: $primary;
+}
 /* *** CONTEST *** */
 .contest_title {
     margin-bottom: 20px;

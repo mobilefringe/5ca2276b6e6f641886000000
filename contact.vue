@@ -21,9 +21,9 @@
                         </div>
                     </div>
                     <div class="row" id="contact_us_container">
-                        <!--<div class="col-md-4">-->
-                        <!--    <div v-if="contactInfo.body" class="margin_60 padding_60" v-html="contactInfo.body"></div>    -->
-                        <!--</div>-->
+                        <div class="col-md-4">
+                            <div v-if="contactInfo.body" class="margin_60 padding_60" v-html="contactInfo.body"></div>    
+                        </div>
                         <div class="col-md-8">
                             <transition name="fadeIn">
                                 <div>
@@ -124,10 +124,10 @@
                         }
                     }
                     
-                    if(response && response[0]){
-                        this.main = response[0].data
-                        if(response[0].data && response[0].data.subpages){
-                           this.contactInfo = response[0].data.subpages[0];
+                    if(response && response[1]){
+                        this.main = response[1].data
+                        if(response[0].data && response[1].data.subpages){
+                           this.contactInfo = response[0].data.subpages[1];
                         }
                     }
                     this.dataLoaded = true;

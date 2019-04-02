@@ -125,7 +125,7 @@
                     }
                     
                     if(response && response[1]){
-                        this.main = response[1].data
+                        this.main = response[0].data
                         if(response[0].data && response[1].data.subpages){
                            this.contactInfo = response[0].data.subpages[1];
                         }

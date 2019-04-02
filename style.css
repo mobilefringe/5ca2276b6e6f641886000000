@@ -958,7 +958,7 @@ $anim-speed: 0.3s;
 }
 
 #contact_us_container h2 {
-    color: $primary;
+    color: $primary !important;
 }
 /* *** CONTEST *** */
 .contest_title {

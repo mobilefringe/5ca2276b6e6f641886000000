@@ -952,6 +952,10 @@ $anim-speed: 0.3s;
         
     }
 }
+
+#contact_us_container a {
+    color: $secondary;
+}
 /* *** CONTEST *** */
 .contest_title {
     margin-bottom: 20px;

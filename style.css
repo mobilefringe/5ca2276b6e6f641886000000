@@ -1289,8 +1289,8 @@ $anim-speed: 0.3s;
     }
 }
 
-.control .has-icon .has-icon-right {
-    background-color: #ebebeb;
+.has-icon-right {
+    : #ebebeb;
 }
 
 .store_list_container::-webkit-scrollbar {

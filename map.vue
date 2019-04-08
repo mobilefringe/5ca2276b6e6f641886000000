@@ -69,6 +69,7 @@
                     suggestionAttribute: "name",
                     storeSearch: null,
                     currentSelection: null,
+                    pageBanner: null
                 }
             },
             created (){

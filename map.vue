@@ -74,6 +74,16 @@
             },
             created (){
                 this.loadData().then(response => {
+                    var temp_repo = this.findRepoByName('Map Banner');
+                    if(temp_repo !== null && temp_repo !== undefined) {
+                       temp_repo = temp_repo.images;
+                       this.pageBanner = temp_repo[0];
+                    }
+                    else {
+                        this.pageBanner = {
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5c93d5496e6f642f32010000/image/png/1553624485505/creekside_banner.png"
+                        }
+                    }
                     this.dataLoaded = true;
                 });
             },

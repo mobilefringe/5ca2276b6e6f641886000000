@@ -132,7 +132,7 @@
 
 <style>
     .store_details_map .mapplic-popup-link {
-        display: none;
+        display: none !important;
     }
 </style>
 

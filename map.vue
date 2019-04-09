@@ -57,7 +57,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
     .mapplic-popup-link {
         display: inline;
     }

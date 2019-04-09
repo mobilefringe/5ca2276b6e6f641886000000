@@ -16,7 +16,7 @@
                     </div>
                     <div class="row" v-if="main">
                         <div class="col-md-12">
-                            <!--<div  v-html="main.body"></div>-->
+                            <div  v-html="description.body"></div>
                         </div>
                     </div>
                 </div>

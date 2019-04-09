@@ -132,7 +132,7 @@
 
 <style module>
     .mapplic-popup-link {
-        display: none !important;
+        display: none;
     }
 </style>
 

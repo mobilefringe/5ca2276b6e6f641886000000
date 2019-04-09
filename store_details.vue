@@ -132,7 +132,7 @@
 
 <style scoped>
     .mapplic-popup-link {
-        display: none;
+        display: none !important;
     }
 </style>
 

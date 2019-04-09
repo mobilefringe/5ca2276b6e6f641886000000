@@ -146,7 +146,7 @@ define([], function () {
                 {
                     path: '',
                     component: view('events_and_promotions'),
-                    name: 'promotions'
+                    name: 'Events & Promotions'
                 },
                 {
                     path: ':id',

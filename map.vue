@@ -59,7 +59,7 @@
 
 <style module>
     .mapplic-popup-link {
-        display: inline !important;
+        display: inline;
     }
 </style>
 

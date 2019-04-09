@@ -130,8 +130,8 @@
     </div>
 </template>
 
-<style scoped module>
-    .mapplic-popup-link {
+<style>
+    .store_details_map .mapplic-popup-link {
         display: none;
     }
 </style>

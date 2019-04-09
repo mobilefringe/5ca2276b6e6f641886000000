@@ -16,7 +16,7 @@
                     </div>
                     <div class="row" v-if="main">
                         <div class="col-md-12">
-                            <div  v-html="description.body"></div>
+                            <div  v-html="descriptions.body"></div>
                         </div>
                     </div>
                 </div>
@@ -81,6 +81,7 @@
                         if(response[1].data && response[1].data.subpages){
                            this.address = response[1].data.subpages[0];
                            this.directions = response[1].data.subpages[1]
+                           this.descriptions = 
                         }
                     }
                     this.dataLoaded = true;

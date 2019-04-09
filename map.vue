@@ -57,6 +57,12 @@
     </div>
 </template>
 
+<style scoped>
+    .mapplic-popup-link {
+        display: none !important;
+    }
+</style>
+
 <script>
     define(["Vue", "vuex", "vue-select", "vue!search-component", "vue!mapplic-png-map"], function(Vue, Vuex, VueSelect, SearchComponent, MapplicComponent) {
         Vue.component('v-select', VueSelect.VueSelect);

@@ -145,7 +145,7 @@ define([], function () {
             children: [
                 {
                     path: '',
-                    component: view('promotions'),
+                    component: view('events-and-promotions'),
                     name: 'promotions'
                 },
                 {

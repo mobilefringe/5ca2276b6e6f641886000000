@@ -130,7 +130,7 @@
     </div>
 </template>
 
-<style scoped>
+<style module>
     .mapplic-popup-link {
         display: none !important;
     }

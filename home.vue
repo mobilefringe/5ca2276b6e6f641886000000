@@ -26,7 +26,7 @@
                             <div v-else>
                                 <a :href="banner.url">
                                     <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
-                                        <p style="display: none"></p>
+                                        <p style="display: none">{{ banner.name }}</p>
                                     </div>
                                 </a>
                             </div>

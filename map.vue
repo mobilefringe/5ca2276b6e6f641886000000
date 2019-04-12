@@ -82,7 +82,7 @@
                     }
                     else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5c93d5496e6f642f32010000/image/png/1553624485505/creekside_banner.png"
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/png/1554994625000/riverside_paceholder_banner.png"
                         }
                     }
                     this.dataLoaded = true;

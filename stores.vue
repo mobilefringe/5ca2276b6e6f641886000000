@@ -55,12 +55,12 @@
                             	        <router-link :to="'/stores/'+ store.slug">
                                 			<!--<img class="store_img" :src="store.image_url" alt="">-->
                                 			<div v-if="!store.no_store_logo">
-                                			    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" alt="Store Logo">
+                                			    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/png/1554994818000/riverside_default_image.png" alt="Store Logo">
                                 			    <img  class="store_img" :src="store.store_front_url_abs" alt="">
                                 			</div>
                                 			
                                             <div v-else class="no_logo_container">
-                                                <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" alt="logo">
+                                                <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/png/1554994818000/riverside_default_image.png" alt="logo">
                                                 <div class="no_logo_text">
                                                     <div class="store_text"><h4>{{ store.name }}</h4></div>
                                                 </div>
@@ -131,7 +131,7 @@
                     }
                     else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b71eb886e6f6450013c0000/image/jpeg/1529532304000/insidebanner2.jpg"
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/png/1554994625000/riverside_paceholder_banner.png"
                         }
                     }
                     

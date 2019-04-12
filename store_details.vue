@@ -255,7 +255,7 @@
                             var current_promo = vm.findPromoById(value);
                             
                             if (_.includes(current_promo.image_url, 'missing')) {
-                                current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5b8712636e6f641ebd220000/image/png/1529532181000/promoplaceholder2@2x.png";
+                                current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/png/1554994818000/riverside_default_image.png";
                             }
     
                             temp_promo.push(current_promo);
@@ -268,7 +268,7 @@
                             var current_event = vm.findEventById(value);
                             
                             if (_.includes(current_event.image_url, 'missing')) {
-                                current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5b8712636e6f641ebd220000/image/png/1529532187000/eventsplaceholder2@2x.png";
+                                current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/png/1554994818000/riverside_default_image.png";
                             }
     
                             temp_event.push(current_event);

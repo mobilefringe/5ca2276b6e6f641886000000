@@ -168,7 +168,7 @@
                     var social_feed = socialFeed.social.instagram;
                     this.instaFeed = _.slice(social_feed, [0], [6]);
                     this.instaFeed.map(insta => {
-                        if(insta.caption != null){
+                        if (insta.caption != null) {
                             insta.caption.text = _.truncate(insta.caption.text, { 'length': 60, 'separator': ' ' });
                         }
                     });
@@ -228,7 +228,7 @@
                         var showOnWebDate = moment.tz(value.show_on_web_date, this.timezone).format();
                         if (today >= showOnWebDate) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1529532181000/promoplaceholder2@2x.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/png/1554994818000/riverside_default_image.png";
                             }
                             // Sort Featured Promotions
                             if (value.is_featured) {
@@ -254,7 +254,7 @@
                         var showOnWebDate = moment.tz(value.show_on_web_date, this.timezone).format();
                         if (today >= showOnWebDate) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1529532187000/eventsplaceholder2@2x.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/png/1554994818000/riverside_default_image.png";
                             }
                             // Sort Featured Events
                             if (value.is_featured) {
@@ -281,7 +281,12 @@
             methods: {
                 loadData: async function() {
                     try {
-                        let results = await Promise.all([this.$store.dispatch("getData", "banners"), this.$store.dispatch("getData","promotions"), this.$store.dispatch("getData", "events"), this.$store.dispatch('LOAD_PAGE_DATA', {url: "https://riverside.mallmaverick.com/api/v4/riverside/social.json"})]);
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "banners"), 
+                            this.$store.dispatch("getData","promotions"), 
+                            this.$store.dispatch("getData", "events"), 
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://riverside.mallmaverick.com/api/v4/riverside/social.json" })
+                        ]);
                         return results;
                     } catch(e) {
                         console.log("Error loading data: " + e.message);    

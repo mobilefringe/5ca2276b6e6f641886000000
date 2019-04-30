@@ -27,7 +27,7 @@
                     <p>{{ getPropertyAddress }}</p>
                     <p v-if="property.contact_phone" class="margin_40"><a :href="'tel:' + property.contact_phone">{{ property.contact_phone }}</a></p>
                     <div class="footer_links">
-                        <p><a :href="'/pages/'+siteInfo.subdomain+'-privacy-policy/'" target="_blank">Privacy Policy</a></p>
+                        <p><a :href="'/pages/' + siteInfo.subdomain + '-privacy-policy'" target="_blank">Privacy Policy</a></p>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                     return moment().year();
                 },
                 getPropertyAddress() {
-                    return this.property.address1 + ', ' + this.property.city + ', ' + this.property.province_state + ' ' + this.property.country
+                    return this.property.address1 + this.property.city + this.property.province_state + this.property.postal_code + this.property.country
                 }
             },
             methods: {

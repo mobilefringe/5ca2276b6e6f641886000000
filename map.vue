@@ -79,8 +79,7 @@
                     if(temp_repo !== null && temp_repo !== undefined) {
                        temp_repo = temp_repo.images;
                        this.pageBanner = temp_repo[0];
-                    }
-                    else {
+                    } else {
                         this.pageBanner = {
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/png/1554994625000/riverside_paceholder_banner.png"
                         }
@@ -155,14 +154,16 @@
             methods: {
                 loadData: async function () {
                     try {
-                        let results = await Promise.all([this.$store.dispatch("getData", "categories"), this.$store.dispatch("getData", "repos")]);
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "categories"), 
+                            this.$store.dispatch("getData", "repos")
+                        ]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
                 },
                 dropPin(store) {
-                    console.log(store)
                     this.pngMapRef.showLocation(store.id);
                 },
                 onOptionSelect(option) {

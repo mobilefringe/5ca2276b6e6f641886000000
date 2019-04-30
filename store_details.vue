@@ -130,7 +130,7 @@
 </template>
 
 <style>
-    .store_details_map .mapplic-popup-link {
+    #store_details_map .mapplic-popup-link {
         display: none !important;
     }
 </style>

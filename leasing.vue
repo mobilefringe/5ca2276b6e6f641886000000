@@ -60,7 +60,7 @@
             created() {
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Leasing Banner');
-                    if(temp_repo != null && temp_repo !==undefined) {
+                    if (temp_repo != null && temp_repo !==undefined) {
                         this.pageBanner = temp_repo.images[0];
                     } else {
                         this.pageBanner = {
@@ -69,18 +69,18 @@
                     }
                     
                     var temp_repo1 = this.findRepoByName('Leasing Booklet');
-                    if(temp_repo1) {
+                    if (temp_repo1) {
                         this.leasingBooklet = temp_repo1.images[0].image_url;
                     }
 
                     var temp_repo2 = this.findRepoByName('Leasing Images');
-                    if(temp_repo2) {
+                    if (temp_repo2) {
                         this.pageImages = temp_repo2.images;
                     }
 
-                    if(response && response[1]){
+                    if (response && response[1]) {
                         this.main = response[1].data;
-                        if(response[1].data && response[1].data.subpages && response[1].data.subpages[0]){
+                        if (response[1].data && response[1].data.subpages && response[1].data.subpages[0]) {
                             this.leasingInfo = response[1].data.subpages[0]
                         }
                     }
@@ -98,7 +98,10 @@
                 loadData: async function () {
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
                     try {
-                        let results = await Promise.all([this.$store.dispatch("getData", "repos"), this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/"+Site.subdomain+"-leasing.json"})]);
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "repos"), 
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + Site.subdomain + "-leasing.json" })
+                        ]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);

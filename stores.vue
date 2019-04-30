@@ -53,12 +53,10 @@
                                 <div v-masonry-tile  v-for="(store, index) in filteredStores" :key="index" class="stores-grid-item">
                             	    <div class="store_logo_container">
                             	        <router-link :to="'/stores/'+ store.slug">
-                                			<!--<img class="store_img" :src="store.image_url" alt="">-->
                                 			<div v-if="!store.no_store_logo">
                                 			    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" alt="Store Logo">
                                 			    <img  class="store_img" :src="store.store_front_url_abs" alt="">
                                 			</div>
-                                			
                                             <div v-else class="no_logo_container">
                                                 <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" alt="logo">
                                                 <div class="no_logo_text">
@@ -128,36 +126,16 @@
                     if(temp_repo !== null && temp_repo !== undefined) {
                        temp_repo = temp_repo.images;
                        this.pageBanner = temp_repo[0];
-                    }
-                    else {
+                    } else {
                         this.pageBanner = {
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/png/1554994625000/riverside_paceholder_banner.png"
                         }
                     }
                     
                     this.dataLoaded = true;
-                    
-                    this.query = this.$route.query.category
-                    if(this.query == "dining_full_service"){
-                      this.selectedCat = "Dining Full Service";
-                      this.filterByCategory;
-                    } else {
-                        this.selectedCat = "All";
-                        this.filteredStores = this.allStores;
-                    }
                 });
             },
             watch: {
-                $route: function() {
-                    this.query = this.$route.query.category
-                    if(this.query == "dining_full_service"){
-                      this.selectedCat = "Dining Full Service";
-                      this.filterByCategory;
-                    } else {
-                        this.selectedCat = "All";
-                        this.filteredStores = this.allStores;
-                    }    
-                },
                 selectedCat: function() {
                     this.$nextTick(function() {
                         Vue.prototype.$redrawVueMasonry();
@@ -214,7 +192,6 @@
                         _.forEach(value.categories, function(category, key) {
                             var current_category = vm.findCategoryById(category)
                             if(!_.includes(cats, current_category.name)) {
-                                
                                 cats.push(current_category.name)
                             }
                         });
@@ -249,7 +226,10 @@
             methods: {
                 loadData: async function() {
                     try {
-                        let results = await Promise.all([this.$store.dispatch("getData", "categories"), this.$store.dispatch("getData", "repos")]);
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "categories"), 
+                            this.$store.dispatch("getData", "repos")
+                        ]);
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }

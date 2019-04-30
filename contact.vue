@@ -16,8 +16,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div v-if="main" class="margin_60" v-html="main.body"></div>
-                            <!--<p class="margin_60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac egestas nisl. Cras odio massa, tincidunt ut faucibus in, egestas non nisl. Morbi vel nibh metus. In quis est eget risus semper facilisis. Sed in felis vel lorem consectetur convallis. Aliquam fringilla facilisis ipsum et sagittis. Maecenas rutrum urna id efficitur ultrices. Duis porttitor, ante quis consectetur aliquet, elit massa dignissim ex, non luctus lacus dolor quis ipsum.</p>-->
+                            <!--<div v-if="main" class="margin_60" v-html="main.body"></div>-->
                         </div>
                     </div>
                     <div class="row" id="contact_us_container">
@@ -84,14 +83,7 @@
         </transition>
     </div>
 </template>
-<style>
-    #contact_us_container h2{
-        font-size: 0.8rem;
-        line-height: 1.5rem;
-        margin:auto;
-        color:#497e71;
-    }
-</style>
+
 <script>
     define(["Vue", "vuex", "vue-meta", "vee-validate", "json!site.json"], function (Vue, Vuex, Meta, VeeValidate, Site) {
         Vue.use(Meta);
@@ -117,8 +109,7 @@
                     if(temp_repo !== null && temp_repo !== undefined) {
                        temp_repo = temp_repo.images;
                        this.pageBanner = temp_repo[0];
-                    }
-                    else {
+                    } else {
                         this.pageBanner = {
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/png/1554994625000/riverside_paceholder_banner.png"
                         }

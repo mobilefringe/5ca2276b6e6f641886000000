@@ -35,7 +35,7 @@
                                 <div class="row margin_30">
                                     <div class="col-md-12">
                                         <router-link to="/events-and-promotions">
-                    		                <div class="animated_btn pull-left">Back to Events</div>    
+                    		                <div class="animated_btn pull-left">Back to Events & Promotions</div>    
                     		            </router-link>    
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@
 			created() {
 				this.$store.dispatch("getData", "events").then(response => {
 				    var temp_repo = this.findRepoByName('Events Banner').images;
-                    if(temp_repo != null) {
+                    if (temp_repo != null) {
                         this.pageBanner = temp_repo[0];
                     } else {
                         this.pageBanner = {
@@ -90,8 +90,7 @@
 					this.currentEvent = this.findEventBySlug(this.id);
 					if (this.currentEvent === null || this.currentEvent === undefined) {
 						this.$router.replace({ name: '404' });
-					}
-					else {
+					} else {
 					    if (this.currentEvent.eventable_type === "Store"){
                             if (_.includes(this.currentEvent.event_image_url_abs, 'missing')) {
                                 this.currentEvent.image_url = this.currentEvent.store.store_front_url_abs; 
@@ -135,7 +134,7 @@
 				shareURL(slug) {
                     var share_url = window.location.href
                     return share_url
-                },
+                }
 			}
 		});
 	});

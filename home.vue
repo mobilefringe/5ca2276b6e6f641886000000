@@ -226,6 +226,7 @@
                         // temp.name = temp_name[key];
                         // temp.description = temp_desc[key];
                         // temp.url = temp_url[key];
+                        value.description = value.desc
                         banners.push(value);
                     });
                     banners = _.orderBy(banners, function(o) { return o.position });

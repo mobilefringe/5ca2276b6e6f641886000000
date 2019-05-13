@@ -204,11 +204,7 @@
                     //         }
                     //     }
                     // });
-                    var temp_image_url = ["//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1554907912435/rp_home_1925x470.jpg"]
-                    var temp_name = ["Treat Yourself."]
-                    var temp_desc = ["You deserve it."]
-                    var temp_url = ["/stores"]
-                    
+                    // REMOVE BANNERS POST LAUNCH
                     var temp_images = [
                         {
                             image_url: "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1557759983981/RP_HungryTreat519_images1a.jpg",
@@ -223,19 +219,7 @@
                             url: "/stores"
                         },
                     ]
-                    console.log("temp_images", temp_images)
                     return temp_images
-                    
-                    // _.forEach(temp_image_url, function (value, key) {
-                    //     var temp = {};
-                    //     temp.image_url = temp_image_url[key];
-                    //     temp.name = temp_name[key];
-                    //     temp.description = temp_desc[key];
-                    //     temp.url = temp_url[key];
-                    //     banners.push(temp);
-                    // });
-                    // banners = _.orderBy(banners, function(o) { return o.position });
-                    // return banners
                 },
                 featuredItems() {
                     var promotions = [];

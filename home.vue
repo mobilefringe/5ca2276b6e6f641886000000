@@ -220,13 +220,13 @@
                         },
                     ]
                     console.log("temp_images", temp_images)
-                    _.forEach(temp_image_url, function (value, key) {
-                        var temp = {};
-                        temp.image_url = temp_image_url[key];
-                        temp.name = temp_name[key];
-                        temp.description = temp_desc[key];
-                        temp.url = temp_url[key];
-                        banners.push(temp);
+                    _.forEach(temp_images, function (value, key) {
+                        // var temp = {};
+                        // temp.image_url = temp_image_url[key];
+                        // temp.name = temp_name[key];
+                        // temp.description = temp_desc[key];
+                        // temp.url = temp_url[key];
+                        banners.push(value);
                     });
                     banners = _.orderBy(banners, function(o) { return o.position });
                     return banners

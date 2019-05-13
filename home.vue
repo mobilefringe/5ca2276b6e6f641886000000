@@ -223,6 +223,7 @@
                             url: "/stores"
                         },
                     ]
+                    console.log("temp_images", temp_images)
                     return temp_images
                     
                     // _.forEach(temp_image_url, function (value, key) {

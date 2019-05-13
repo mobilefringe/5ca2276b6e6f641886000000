@@ -213,7 +213,7 @@
                         {
                             image_url: "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1557759983981/RP_HungryTreat519_images1a.jpg",
                             name: "Hungry?",
-                            desciption: "We know just the place.",
+                            description: "We know just the place.",
                             url: "/dine"
                         },
                         {

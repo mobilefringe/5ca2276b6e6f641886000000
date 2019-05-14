@@ -220,9 +220,9 @@
                         },
                         {
                             image_url: "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1557759983925/RP_HungryTreat519_images1.jpg",
-                            name: "Hungry?",
-                            description: "We know just the place.",
-                            url: "/dine"
+                            name: "Treat Yourself",
+                            description: "You deserve it",
+                            url: "/stores"
                         },
                     ]
                     return temp_images

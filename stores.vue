@@ -117,7 +117,7 @@
                     toggleText: "Display as List",
                     logoView: true,
                     listView: false,
-                    dineFilter: 6199
+                    
                 }
             },
             created (){

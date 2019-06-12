@@ -186,47 +186,48 @@
                 ]),
                 homeBanners() {
                     var banners = [];
-                    // _.forEach(this.$store.state.banners, function (value, key) {
-                    //     var today = new Date();
-                    //     var start = new Date (value.start_date);
-                    //     if (start <= today){
-                    //         if (value.end_date){
-                    //             var end = new Date (value.end_date);
-                    //             if (end >= today){
-                    //                 banners.push(value);  
-                    //             }
-                    //         } else {
-                    //             banners.push(value);
-                    //         }
+                    _.forEach(this.$store.state.banners, function (value, key) {
+                        var today = new Date();
+                        var start = new Date (value.start_date);
+                        if (start <= today){
+                            if (value.end_date){
+                                var end = new Date (value.end_date);
+                                if (end >= today){
+                                    banners.push(value);  
+                                }
+                            } else {
+                                banners.push(value);
+                            }
                             
-                    //         if (value.cms_fields.subheader) {
-                    //             value.heading = value.cms_fields.subheader;
-                    //         }
-                    //     }
-                    // });
-                    // REMOVE BANNERS POST LAUNCH
-                    var temp_images = [
-                        {
-                            image_url: "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1557759983981/RP_HungryTreat519_images1a.jpg",
-                            name: "Hungry?",
-                            description: "We know just the place.",
-                            url: "/dine"
-                        },
-                        {
-                            image_url: "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1557759983925/RP_HungryTreat519_images1.jpg",
-                            name: "Treat Yourself",
-                            description: "You deserve it",
-                            url: "/stores"
-                        },
-                        {
-                            image_url: "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1554907912435/rp_home_1925x470.jpg",
-                            name: "",
-                            description: "",
-                            url: ""
-                        },
+                            if (value.cms_fields.subheader) {
+                                value.heading = value.cms_fields.subheader;
+                            }
+                        }
+                    });
+                    return banners
+                    // // REMOVE BANNERS POST LAUNCH
+                    // var temp_images = [
+                    //     {
+                    //         image_url: "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1557759983981/RP_HungryTreat519_images1a.jpg",
+                    //         name: "Hungry?",
+                    //         description: "We know just the place.",
+                    //         url: "/dine"
+                    //     },
+                    //     {
+                    //         image_url: "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1557759983925/RP_HungryTreat519_images1.jpg",
+                    //         name: "Treat Yourself",
+                    //         description: "You deserve it",
+                    //         url: "/stores"
+                    //     },
+                    //     {
+                    //         image_url: "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1554907912435/rp_home_1925x470.jpg",
+                    //         name: "",
+                    //         description: "",
+                    //         url: ""
+                    //     },
                         
-                    ]
-                    return temp_images
+                    // ]
+                    // return temp_images
                 },
                 featuredItems() {
                     var promotions = [];

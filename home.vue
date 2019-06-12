@@ -204,7 +204,7 @@
                             }
                         }
                     });
-                    console.log("banners", banners)
+
                     return banners
                 },
                 featuredItems() {

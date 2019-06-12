@@ -205,29 +205,6 @@
                         }
                     });
                     return banners
-                    // // REMOVE BANNERS POST LAUNCH
-                    // var temp_images = [
-                    //     {
-                    //         image_url: "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1557759983981/RP_HungryTreat519_images1a.jpg",
-                    //         name: "Hungry?",
-                    //         description: "We know just the place.",
-                    //         url: "/dine"
-                    //     },
-                    //     {
-                    //         image_url: "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1557759983925/RP_HungryTreat519_images1.jpg",
-                    //         name: "Treat Yourself",
-                    //         description: "You deserve it",
-                    //         url: "/stores"
-                    //     },
-                    //     {
-                    //         image_url: "//codecloud.cdn.speedyrails.net/sites/5ca2276b6e6f641886000000/image/jpeg/1554907912435/rp_home_1925x470.jpg",
-                    //         name: "",
-                    //         description: "",
-                    //         url: ""
-                    //     },
-                        
-                    // ]
-                    // return temp_images
                 },
                 featuredItems() {
                     var promotions = [];

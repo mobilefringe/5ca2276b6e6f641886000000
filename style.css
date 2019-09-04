@@ -340,7 +340,7 @@ input[type=search] {
                 }
             	&:hover, &:active, &:focus, &:visited {
             	    background: $primary;
-            	    color: $secondary;
+            	    color: #FFF;
             	}
             }
         }

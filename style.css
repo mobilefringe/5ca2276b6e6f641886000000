@@ -1476,10 +1476,10 @@ $anim-speed: 0.3s;
     }
     #searchComponentInput {
         padding: 0 13px;
-        height: 28px;
+        height: 33px;
         border: none;
         background: transparent;
-        font-size: 0.8125rem;
+        // font-size: 0.8125rem;
         line-height: normal;
         color: #555;
     }
@@ -1490,7 +1490,7 @@ $anim-speed: 0.3s;
         position: absolute;
         top: 8px;
         right: 10px;
-        font-size: 0.875rem;
+        // font-size: 0.875rem;
         line-height: normal;
         color: #555;
     }
@@ -1508,7 +1508,7 @@ $anim-speed: 0.3s;
             color: #555;
             p {
                 margin: 0;
-                font-size: 0.8125rem;
+                // font-size: 0.8125rem;
                 line-height: normal;
                 transition: all 0.3s ease;
             }

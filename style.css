@@ -1461,10 +1461,11 @@ $anim-speed: 0.3s;
     text-transform: initial;
 }
 .store_search {
-    width: 208px;
-    height: 30px;
+    width: 215px;
+    height: 35px;
     position: relative;
     float: right;
+    background: #ebebeb;
     #searchComponentInput {
         padding: 0 13px;
         height: 28px;

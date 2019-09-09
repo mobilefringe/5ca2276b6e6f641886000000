@@ -82,7 +82,7 @@ img{
     max-width:100%;
 }
 strong {
-    color: $primary;
+    color: $secondary;
 }
 [v-cloak] {
     display: none;

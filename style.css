@@ -444,9 +444,6 @@ input[type=search] {
             a:hover {
                     color: #BDAB61;
                 }
-            &:hover, &:active, &:focus, &:visited {
-                color: #BDAB61;
-            }
         }
         .footer_links {
             p {

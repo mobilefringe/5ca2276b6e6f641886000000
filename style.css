@@ -441,7 +441,7 @@ input[type=search] {
             .fab {
                 font-size: 2rem;
             }
-            &:hover, &:active, &:focus {
+            &:hover, &:active, &:focus, &:visited {
                 color: $secondary;
             }
         }

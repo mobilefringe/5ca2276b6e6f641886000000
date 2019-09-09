@@ -442,7 +442,7 @@ input[type=search] {
                 font-size: 2rem;
             }
             a:hover {
-                    color: $secondary;
+                    color: #BDAB61;
                 }
             &:hover, &:active, &:focus, &:visited {
                 color: $secondary;

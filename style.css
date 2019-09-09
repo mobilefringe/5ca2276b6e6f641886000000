@@ -334,6 +334,7 @@ input[type=search] {
                 font-size: 0.875rem;
                 line-height: normal;
                 color: #FFF;
+                text-align: left;
                 &:hover, &:active, &:focus, &:visited {
             	    background: $secondary;
             	}

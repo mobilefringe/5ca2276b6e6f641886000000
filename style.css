@@ -441,8 +441,8 @@ input[type=search] {
             .fab {
                 font-size: 2rem;
             }
-            a {
-        color: $primary;
+            &:hover {
+        color: $secondary;
             }
         }
         .footer_links {

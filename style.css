@@ -442,7 +442,7 @@ input[type=search] {
                 font-size: 2rem;
             }
             &:hover, &:active, &:focus {
-        color: $secondary;
+                color: $secondary;
             }
         }
         .footer_links {

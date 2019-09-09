@@ -81,6 +81,9 @@ a {
 img{
     max-width:100%;
 }
+strong {
+    color: $primary;
+}
 [v-cloak] {
     display: none;
 }

@@ -731,7 +731,7 @@ input[type=search] {
                 visibility: visible;
                 position: absolute;
                 top: 0;
-                background: $primary;
+                background: $secondary;
             }    
         }
     }

@@ -1902,6 +1902,7 @@ input[type=search] {
     font-weight: 700;
     font-size: 1.583rem;
     line-height: normal;
+    letter-spacing: 0;
 }
 .page_body {
     h2 {

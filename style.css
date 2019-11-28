@@ -1760,6 +1760,11 @@ input[type=search] {
             h4 {
                 margin: 0;
                 color: #000;
+                font-family: 'Roboto Condensed', sans-serif;
+                font-weight: 700;
+                font-size: 1.25rem;
+                line-height: normal;
+                letter-spacing: 0;
             }
         }
     }

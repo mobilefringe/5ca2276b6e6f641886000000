@@ -90,7 +90,6 @@
 <script>
     define(["Vue", "vuex", "jquery", "axios", "vee-validate", '!json.site.json'], function(Vue, Vuex, $, axios, VeeValidate, site) {
         Vue.use(VeeValidate);
-        // console.log(VueScrollTo)
         return Vue.component("contest-component", {
             template: template, // the variable template will be injected
             data: function() {
@@ -107,6 +106,17 @@
                 }
             },
             created() {
+                this.$store.dispatch("getData", "repos").then(response => {
+                `   var temp_repo = this.findRepoByName('Events Banner').images;
+                    if (temp_repo != null) {
+                        this.pageBanner = temp_repo[0];
+                    } else {
+                        this.pageBanner = {
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5de031406e6f6416dbb80000/image/png/1554994625000/riverside_paceholder_banner.png"
+                        }
+                    }
+                });
+                
                 this.$store.dispatch("getData", "contests").then(response => {
                     this.currentContest = this.findContestByShowOnSlug('riverside-contest');
                     this.dataLoaded = true;
@@ -128,6 +138,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
+                    'findRepoByName',
                     'findContestBySlug',
                     'findContestByShowOnSlug'
                 ]),

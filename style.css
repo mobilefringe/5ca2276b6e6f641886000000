@@ -357,9 +357,12 @@ input[type=search] {
             	    margin: 0;
             	    color: #fff;
             	}
-            	a:hover {
-                    color: #FFF;
+            	a {
+            	    &:hover, &:focus {
+            	       color: #FFF;
+            	    }
                 }
+                
             }
         }
     }
